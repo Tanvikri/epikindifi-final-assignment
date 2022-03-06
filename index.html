@@ -5,7 +5,7 @@
     <title>Book Club</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="fetchBooksDetails ()">
     <nav class="navigation-bar">
         <div class="page-title">
             Book club
@@ -21,7 +21,7 @@
 
     <section class="content-section">
         <p id="logged-in-user-name">
-
+            <h4 id="logged-in-user-name-current">No user Logged in</h4>
         </p>
         <table class="book-table" id="info-table">
             <thead>
@@ -45,6 +45,12 @@
                     Action
                 </th>
             </tr>
+            <tbody id="info-table-body">
+
+            </tbody>
+            <tbody id="info-table-body-new-book">
+                
+            </tbody>
             </thead>
         </table>
     </section>
